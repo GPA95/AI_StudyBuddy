@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Language-Python-yellow?logo=python)
 ![IBM SkillsBuild](https://img.shields.io/badge/AICTE%20x%20IBM-SkillsBuild%20Internship-orange?logo=ibm)
 ![Status](https://img.shields.io/badge/Status-Deployed-brightgreen)
-![Version](https://img.shields.io/badge/version-1.0.0-purple) 
+![Version](https://img.shields.io/badge/version-1.1.0-purple)
 
 ---
 
@@ -16,32 +16,44 @@ Students often struggle to grasp difficult topics or summarize lengthy notes.
 
 - 🧩 Explaining complex concepts in simple terms  
 - 📄 Summarizing notes or uploaded PDFs  
-- ❓ Generating quizzes or flashcards for quick revision  
+- ❓ Generating quizzes, solving exam questions, and evaluating answers
 
-It combines **Streamlit** for UI and **Gemini 2.5 Flash API** for fast, intelligent AI responses — all in a clean chat-based interface.
+Combines **Streamlit** for UI and **Gemini 2.5 Flash API** for fast, intelligent AI responses — all in a clean chat-based interface.
 
-🔗 [Check out the live app here! 🏎️](https://sgpai-study-buddy.streamlit.app/) 
+🔗 [Live app](https://sgpai-study-buddy.streamlit.app/) | [User Help Guide (PDF)](https://drive.google.com/file/d/your_file_id_here/view?usp=sharing)
 
 ---
 
 ## ⚙️ **System Design**
 
 ### 🏗️ **Architecture**
-A lightweight **Streamlit frontend** interacts with **Google’s Gemini 2.5 Flash** backend through secure API calls.  
-All secrets are managed safely via `.env` and `st.secrets`.
+A lightweight **Streamlit frontend** interacts with **Google Gemini 2.5 Flash** backend via secure API calls.  
+All secrets managed safely via `.env` and `st.secrets`.
 
 ### 🧩 **Core Features**
-| Mode | Function | Example |
-|------|-----------|----------|
-| 🧠 **Explainer** | Simplifies academic concepts | “Explain Deadlock in OS” |
-| 📄 **Summarizer** | Condenses notes or PDFs | Upload 20-page PDF → short summary |
-| ❓ **Quizzer** | Generates MCQs & flashcards | “Create 10 questions on DBMS” |
 
-Additional:
-- 📂 PDF upload (text extraction via PyPDF2)
+| Mode        | Function                                                           | Example                       |
+|-------------|--------------------------------------------------------------------|-------------------------------|
+| 🧠 **Explainer**      | Simplifies academic concepts                                   | “Explain Deadlock in OS”      |
+| 📄 **Summarizer**     | Condenses notes or PDFs                                       | Upload 20-page PDF → summary  |
+| 🧩 **Quizzer**        | Quiz generator, solver, evaluator (multi-mode workflow)       | MCQs, solve/evaluate Q&As     |
+
+Other Features:
+- 📂 PDF upload (PyPDF2 extraction)
 - 💬 Real-time chat interface
-- 🔄 New chat reset option
+- 🔄 New chat/reset option
 - ☁️ Deployed on Streamlit Cloud
+
+---
+
+## 🧙‍♂️ **Quizzer Mode — Three Powerful Sub-modes**
+
+1. **📝 Generate Questions**  
+   Enter a topic/chapter/passage. Get a variety of questions (MCQ, T/F, fill-in, descriptive) — answers listed together as an answer key for self-testing.
+2. **📖 Solve Questions**  
+   Paste your exam questions (optionally add word limits or marks). Get concise, exam-ready answers formatted per input.
+3. **✅ Evaluate Answers**  
+   Submit questions and your answers (with '---' separator, or sequential prompts). Get detailed feedback, correction, and scoring.
 
 ---
 
@@ -69,41 +81,41 @@ StudyBuddy/
 
 ---
 
-## 🪜 Workflow
-<img width="5496" height="4080" alt="StudyBuddy Workflow" src="https://github.com/user-attachments/assets/ae8f9a61-c84b-4ebf-9081-f139b98cf441" />
-©️🖼️ Diagram Credits: https://gitdiagram.com/
+## 🪜 **Workflow**
+![StudyBuddy Workflow](https://github.com/user-attachments/assets/ae8f9a61-c84b-4ebf-9081-f139b98cf441)
+©️🖼️ Diagram Credits: [https://gitdiagram.com/](https://gitdiagram.com/)
 
 ---
 
 ## 💡 **Tech Stack**
 
-| Category | Technologies |
-|-----------|---------------|
-| **Frontend** | Streamlit |
-| **Backend / AI Engine** | Google Gemini 2.5 Flash API |
-| **Language** | Python |
-| **Libraries** | PyPDF2, google-generativeai, streamlit, dotenv |
-| **Deployment** | Streamlit Community Cloud |
-| **Security** | `.env` + `st.secrets` key handling |
+| Category            | Technologies                             |
+|---------------------|------------------------------------------|
+| **Frontend**        | Streamlit                                |
+| **Backend / AI**    | Google Gemini 2.5 Flash API              |
+| **Language**        | Python                                   |
+| **Libraries**       | PyPDF2, google-generativeai, streamlit, dotenv |
+| **Deployment**      | Streamlit Community Cloud                |
+| **Security**        | `.env` + `st.secrets` key handling       |
 
 ---
 
 ## 🧾 **Results**
 
 - 🎯 Simple, modern, and interactive chat-based UI  
-- 📑 Summarization and quiz generation from user input or PDFs  
-- ⚡ Fast AI responses through Gemini 2.5 Flash  
-- 🧩 Smooth multi-mode workflow for learning support  
+- 📑 Smart summarization, quiz generation, and answer evaluation  
+- ⚡ Fast, context-aware AI with Gemini 2.5 Flash  
+- 🧩 Smooth multi-mode workflow for study and revision
 
 ---
 
 ## 🚀 **Future Scope**
 
-- 🗣️ Speech-based interaction  
+- 🗣️ Speech-to-text / text-to-speech interaction  
 - 🌐 Multi-language explanations  
-- 🧠 Flashcard & spaced-repetition support
-- 👤 Implement memory-based personalization for users
-- ☁️ Drive/Notion integration for saved sessions  
+- 🧠 Flashcard & spaced-repetition support  
+- 👤 Memory-based user personalization  
+- ☁️ Drive/Notion integration for notes & sessions  
 
 ---
 
@@ -112,6 +124,7 @@ StudyBuddy/
 ---
 
 ## 👨‍💻 Author
+
 **Ammaar Ahmad Khan**  
 - GitHub: [@GPA95](https://github.com/GPA95)
 
