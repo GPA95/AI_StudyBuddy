@@ -1,7 +1,50 @@
 # 🧾 CHANGELOG
 **Project:** AI-Powered Study Buddy  
 **Repository:** [GPA95/AI_StudyBuddy](https://github.com/GPA95/AI_StudyBuddy)  
-**Last Updated:** 13 November 2025
+**Last Updated:** 14 November 2025
+
+### 🆕 Version 1.1.0 — Major Feature Update (November 2025)
+
+#### ✨ New Features & Improvements
+
+- **Quizzer Mode Expanded:**  
+  - Added three sub-modes:
+    - 📝 Generate Questions: MCQ, T/F, Fill in the Blanks, Descriptive — answers collected in answer key section
+    - 📖 Solve Questions: Exam-style answers auto-adapted to marks/word limit
+    - ✅ Evaluate Answers: Automated feedback, scoring, and tips for submitted answers
+  - Answer key now shown at the end of quizzes for self-testing
+
+- **Context-Aware Chat:**
+  - Improved support for follow-up questions/responses using previous chat history in all modes
+
+- **Dynamic Sidebar:**  
+  - Nested radio buttons for Quizzer actions; emoji-powered UI  
+  - Clickable badge links for **GitHub Repo** and **User Help** document
+
+- **User Help Documentation:**  
+  - Published quick-start guide covering sample inputs, usage tips, format instructions, troubleshooting, and UI walkthrough
+  - Help doc directly accessible from sidebar
+
+- **Refined Prompts & Outputs:**
+  - Exam-optimized summaries and answer formatting
+  - Markdown-friendly structure, answer keys, bullet points
+  - Improved adaptive answer length based on marks/word limits
+
+- **UI/UX Enhancements:**
+  - Code block outputs with one-click copy capability
+  - Info banners for mode guidance and instructions
+  - Instant feedback buttons for user rating after responses
+
+- **Performance / Stability:**
+  - Improved error/timeout handling for API rate limits
+  - Input text limits for large notes/PDFs for manageable processing
+  - Auto-clearing new chat notifications for better UX
+
+#### 🛠️ Other Updates
+
+- Streamlined code structure and modularization for maintainability
+- Optimized backend prompt logic for clarity, exam readiness, and user options
+- Foundations laid for planned features (speech, flashcards, login, notes, multi-language, etc.)
 
 ---
 
