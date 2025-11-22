@@ -6,7 +6,6 @@ from core.quizzer import (
     solve_questions,
     evaluate_answers
 )
-import time
 
 def get_previous_messages_summary(messages, limit=3):
     context_messages = messages[-2*limit:]
@@ -40,11 +39,38 @@ def chat_ui(selected_mode, selected_sub_mode=None):
             response_placeholder = st.empty()
             try:
                 with st.spinner("💡 Study Buddy is thinking…"):
-                    start_time = time.time()
                     if selected_mode == "💡 Explainer":
                         assistant_response = explain_concept(prompt, previous_context)
+
                     elif selected_mode == "📰 Summarizer":
-                        assistant_response = summarize_text(prompt, previous_context)
+                        # Use uploaded PDF if available; treat chat prompt as extra instruction or follow-up
+                        pdf = st.session_state.get("pdf_content")
+                        user_focus = st.session_state.get("user_focus", "")
+
+                        # detect a likely follow-up question (short, starts with wh-word or ends with '?')
+                        p = prompt.strip()
+                        first_word = p.split()[0].lower() if p else ""
+                        is_short = len(p.split()) <= 12
+                        is_question = p.endswith("?") or first_word in ("what","why","how","when","which","who","where","explain","describe")
+                        is_followup = bool(p) and (is_short or is_question)
+
+                        if pdf:
+                            # If follow-up and there is prior assistant content, prefer adapting the previous summary
+                            if is_followup:
+                                extra = f"Follow-up question: {p}. Use the previous assistant response and the PDF content to answer concisely."
+                            else:
+                                extra = p or user_focus
+
+                            assistant_response = summarize_text(
+                                text=pdf,
+                                previous_context=previous_context,
+                                user_focus=user_focus,
+                                extra_instruction=extra
+                            )
+                        else:
+                            # No PDF loaded — summarize the user's prompt directly (legacy behavior)
+                            assistant_response = summarize_text(p, previous_context)
+
                     elif selected_mode == "🧩 Quizzer":
                         if selected_sub_mode == "📝 Generate Questions":
                             st.info(
@@ -65,12 +91,6 @@ def chat_ui(selected_mode, selected_sub_mode=None):
                             assistant_response = "⚠️ Unknown Quizzer sub-mode."
                     else:
                         assistant_response = "⚠️ Unknown mode selected."
-                    elapsed = time.time() - start_time
-                    if elapsed > 8:
-                        assistant_response += (
-                            "\n\n⏳ *Sorry, this response took longer than usual. "
-                            "If delays happen often, there may be server/API issues.*"
-                        )
             except Exception as e:
                 assistant_response = (
                     "❌ Sorry, there was an error processing your request. "
