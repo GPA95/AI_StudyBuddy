@@ -9,6 +9,12 @@
 
 ---
 
+[![YouTube Demo](https://img.shields.io/badge/Watch-Demo%20Video-red?logo=youtube)](https://youtu.be/Yd0xMocB-V0)
+[![Live App](https://img.shields.io/badge/Try%20it%20Now-Study%20Buddy-success?logo=streamlit)](https://sgpai-study-buddy.streamlit.app/)
+[![HelpDoc](https://img.shields.io/badge/User%20Help-How%20to%20Use-blue?logo=google-drive)](https://drive.google.com/file/d/14NEdW6L4WC_hiqlhNBEElzJnfN60EZDa/view?usp=sharing)
+
+---
+
 ## 🧠 **Project Overview**
 
 Students often struggle to grasp difficult topics or summarize lengthy notes.  
@@ -82,8 +88,44 @@ StudyBuddy/
 ---
 
 ## 🪜 **Workflow**
-![StudyBuddy Workflow](https://github.com/user-attachments/assets/ae8f9a61-c84b-4ebf-9081-f139b98cf441)
+![StudyBuddy Workflow](https://github.com/user-attachments/assets/2cdac27e-2ae1-4dcf-b339-3a63efcebbb3)
+![StudyBuddy System Architecture](https://github.com/user-attachments/assets/ae8f9a61-c84b-4ebf-9081-f139b98cf441)
 ©️🖼️ Diagram Credits: [https://gitdiagram.com/](https://gitdiagram.com/)
+
+---
+
+## 📚 In-Repo User Guide (Quick Start)
+
+You can keep the PDF as the detailed reference and mirror a concise, in-README guide here.
+
+### 1️⃣ Getting Started
+
+- Open the deployed app: `https://sgpai-study-buddy.streamlit.app/`
+- Select a mode from the sidebar: **Explainer**, **Summarizer**, or **Quizzer**
+- Provide input (topic, notes, PDF, or questions) in the main chat area
+
+### 2️⃣ Mode Usage
+
+- **Explainer**:  
+  Type your concept or question (e.g., “Explain paging in OS for exams”).  
+  Study Buddy returns a simple, exam-oriented explanation.
+
+- **Summarizer**:  
+  Upload a PDF or paste notes.  
+  Choose the summary style (concise / detailed / bullet points) if enabled and generate a summary.
+
+- **Quizzer**:  
+  - Use “Generate Questions” for practice questions with an answer key.  
+  - Use “Solve Questions” to get answers to your questions.  
+  - Use “Evaluate Answers” to paste both question and your answer to receive feedback and scoring.
+
+### 3️⃣ Tips for Best Results
+
+- Mention exam context (e.g., “for B.Tech 3rd sem OS viva”) for sharper responses.  
+- Use follow-up prompts in the same chat to refine or extend answers.  
+- Reset the chat using the “New Chat” / reset option before switching topics heavily.
+
+For full details, screenshots, and troubleshooting, refer to the PDF: [![HelpDoc](https://img.shields.io/badge/User%20Help-How%20to%20Use-blue?logo=google-drive)](https://drive.google.com/file/d/14NEdW6L4WC_hiqlhNBEElzJnfN60EZDa/view?usp=sharing)
 
 ---
 
