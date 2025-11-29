@@ -165,6 +165,19 @@ For full details, screenshots, and troubleshooting, refer to the PDF: [![HelpDoc
 
 ---
 
+## 📜 Usage & Attribution
+
+- You are welcome to **fork** this repository to learn from it or build your own version of Study Buddy.  
+- If you deploy this project publicly or create a derivative version:
+  - Keep the existing license file.  
+  - Credit **“Study Buddy by Ammaar Ahmad Khan (GPA95)”**.  
+  - Include a link back to the original repo:
+    - https://github.com/GPA95/AI_StudyBuddy
+
+For contributions, please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on forking, branching, and opening pull requests.
+
+---
+
 ## 👨‍💻 Author
 
 **Ammaar Ahmad Khan**  
