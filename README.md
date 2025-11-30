@@ -26,7 +26,7 @@ Students often struggle to grasp difficult topics or summarize lengthy notes.
 
 Combines **Streamlit** for UI and **Gemini 2.5 Flash API** for fast, intelligent AI responses — all in a clean chat-based interface.
 
-🔗 [Live app](https://sgpai-study-buddy.streamlit.app/) | [User Help Guide (PDF)](https://drive.google.com/file/d/your_file_id_here/view?usp=sharing)
+![Study Buddy Mobile Demo](https://github.com/user-attachments/assets/593f0b16-ebc5-4e93-b1f2-e2878c0c28a9)
 
 ---
 
