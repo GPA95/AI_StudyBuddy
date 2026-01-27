@@ -1,4 +1,5 @@
-# 📘 **Study Buddy — AI-Powered Study Assistant**
+# 📘 **SGPA — Study Guide & Personal Assistant**
+## *AI-Powered Study Assistant*
 
 ![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit)
 ![Gemini API](https://img.shields.io/badge/Backend-Gemini%202.5%20Flash-blue?logo=google)
