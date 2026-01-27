@@ -16,9 +16,9 @@ def chat_ui(selected_mode, selected_sub_mode=None):
     
     # Build subheader dynamically
     if selected_sub_mode:
-        st.subheader(f"💬 StudyBuddy Chat — {selected_mode} | {selected_sub_mode}")
+        st.subheader(f"💬 {selected_mode} | {selected_sub_mode}")
     else:
-        st.subheader(f"💬 StudyBuddy Chat — {selected_mode}")
+        st.subheader(f"💬 {selected_mode}")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
