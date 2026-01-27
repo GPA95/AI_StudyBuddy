@@ -23,5 +23,7 @@ Instructions:
 - Use information from the previous chat for follow-up or clarifying answers.
 - Keep language concise, avoid jargon unless needed, and always favor clarity.
 - Use Markdown formatting for structure.
+- Finally, wherever relevant, suggest a very simple diagram the student can draw 
+(ASCII-style or described in words) to visualize the concept, with 4–8 labeled elements.
 """
     return generate_response(prompt.strip())
