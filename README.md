@@ -11,7 +11,7 @@
 ---
 
 [![YouTube Demo](https://img.shields.io/badge/Watch-Demo%20Video-red?logo=youtube)](https://youtu.be/Yd0xMocB-V0)
-[![Live App](https://img.shields.io/badge/Try%20it%20Now-Study%20Buddy-success?logo=streamlit)](https://sgpai-study-buddy.streamlit.app/)
+[![Live App](https://img.shields.io/badge/Try%20it%20Now-SGPA-success?logo=streamlit)](https://sgpai-study-buddy.streamlit.app/)
 [![HelpDoc](https://img.shields.io/badge/User%20Help-How%20to%20Use-blue?logo=google-drive)](https://drive.google.com/file/d/14NEdW6L4WC_hiqlhNBEElzJnfN60EZDa/view?usp=sharing)
 
 ---
@@ -19,7 +19,7 @@
 ## 🧠 **Project Overview**
 
 Students often struggle to grasp difficult topics or summarize lengthy notes.  
-**Study Buddy** is an AI-powered web app that acts as a **personal academic assistant**, capable of:
+**SGPA** is an AI-powered web app that acts as a **personal academic assistant**, capable of:
 
 - 🧩 Explaining complex concepts in simple terms  
 - 📄 Summarizing notes or uploaded PDFs  
@@ -27,7 +27,7 @@ Students often struggle to grasp difficult topics or summarize lengthy notes.
 
 Combines **Streamlit** for UI and **Gemini 2.5 Flash API** for fast, intelligent AI responses — all in a clean chat-based interface.
 
-![Study Buddy Mobile Demo](https://github.com/user-attachments/assets/593f0b16-ebc5-4e93-b1f2-e2878c0c28a9)
+![SGPA Mobile Demo](https://github.com/user-attachments/assets/593f0b16-ebc5-4e93-b1f2-e2878c0c28a9)
 
 ---
 
@@ -67,7 +67,7 @@ Other Features:
 ## 🧱 **Project Structure**
 
 ```
-StudyBuddy/
+SGPA/
 ├── main.py
 ├── requirements.txt
 ├── assets/
@@ -89,8 +89,8 @@ StudyBuddy/
 ---
 
 ## 🪜 **Workflow**
-![StudyBuddy Workflow](https://github.com/user-attachments/assets/2cdac27e-2ae1-4dcf-b339-3a63efcebbb3)
-![StudyBuddy System Architecture](https://github.com/user-attachments/assets/ae8f9a61-c84b-4ebf-9081-f139b98cf441)
+![SGPA Workflow](https://github.com/user-attachments/assets/2cdac27e-2ae1-4dcf-b339-3a63efcebbb3)
+![SGPA System Architecture](https://github.com/user-attachments/assets/ae8f9a61-c84b-4ebf-9081-f139b98cf441)
 ©️🖼️ Diagram Credits: [https://gitdiagram.com/](https://gitdiagram.com/)
 
 ---
@@ -109,7 +109,7 @@ You can keep the PDF as the detailed reference and mirror a concise, in-README g
 
 - **Explainer**:  
   Type your concept or question (e.g., “Explain paging in OS for exams”).  
-  Study Buddy returns a simple, exam-oriented explanation.
+  SGPA returns a simple, exam-oriented explanation.
 
 - **Summarizer**:  
   Upload a PDF or paste notes.  
@@ -168,12 +168,12 @@ For full details, screenshots, and troubleshooting, refer to the PDF: [![HelpDoc
 
 ## 📜 Usage & Attribution
 
-- You are welcome to **fork** this repository to learn from it or build your own version of Study Buddy.  
+- You are welcome to **fork** this repository to learn from it or build your own version of SGPA.  
 - If you deploy this project publicly or create a derivative version:
   - Keep the existing license file.  
-  - Credit **“Study Buddy by Ammaar Ahmad Khan (GPA95)”**.  
+  - Credit **“SGPA by Ammaar Ahmad Khan (GPA95)”**.  
   - Include a link back to the original repo:
-    - https://github.com/GPA95/AI_StudyBuddy
+    - https://github.com/GPA95/SGPA
 
 For contributions, please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on forking, branching, and opening pull requests.
 
