@@ -11,7 +11,6 @@ venv/
 *.ipynb_checkpoints
 
 # Streamlit/IDE configs
-.streamlit/
 .idea/
 .vscode/
 
