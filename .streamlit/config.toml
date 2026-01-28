@@ -1,0 +1,7 @@
+[theme]
+#Focus Forest - Dark Theme 
+primaryColor = "#34D399" # Bright Mint
+backgroundColor = "#061611" # Deep Forest black
+secondaryBackgroundColor = "#112B23" # Dark Pine sidebar
+textColor = "#ECFDF5" # Mint-white text
+font = "sans serif"
