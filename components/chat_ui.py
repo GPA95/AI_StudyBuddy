@@ -6,6 +6,7 @@ from core.quizzer import (
     solve_questions,
     evaluate_answers
 )
+from utils.logger import log_usage
 
 def get_previous_messages_summary(messages, limit=3):
     context_messages = messages[-2*limit:]
@@ -100,6 +101,16 @@ def chat_ui(selected_mode, selected_sub_mode=None):
             response_placeholder.markdown(assistant_response)
             st.code(assistant_response, language="markdown")
 
+            # Log usage
+            log_usage(
+                mode=selected_mode,
+                sub_mode=selected_sub_mode,
+                had_pdf=("pdf" in (previous_context or "").lower()),
+                prompt_text=prompt,
+                response_text=assistant_response,
+            )
+            
+            # Feedback buttons            
             st.markdown("**Was this response helpful?**")
             col1, col2 = st.columns(2)
             with col1:
