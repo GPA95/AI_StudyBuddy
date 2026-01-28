@@ -18,3 +18,7 @@ venv/
 # Local files and secrets
 .env
 *.env
+
+# Logs
+logs/usage_log.csv
+logs/

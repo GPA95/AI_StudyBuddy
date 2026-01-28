@@ -1,6 +1,0 @@
-timestamp,session_id,mode,sub_mode,had_pdf,prompt_chars,response_chars
-2026-01-28T07:11:06.960227,0ea356eb-50c9-46e5-a7cb-d5af23c255b6,🧩 Quizzer,📝 Generate Questions,0,29,4456
-2026-01-28T07:13:28.855738,1e1ea413-36fc-4cf9-b2c9-73e9d4b7bac0,💡 Explainer,,0,29,3805
-2026-01-28T07:20:07.856140,be5fcf2d-64b0-4a75-93ff-bfd12a2c422a,📰 Summarizer,,0,2053,1493
-2026-01-28T07:28:20.399188,1e1ea413-36fc-4cf9-b2c9-73e9d4b7bac0,💡 Explainer,,0,136,6383
-2026-01-28T07:36:03.555267,5b75f9ac-a5b6-4952-87be-bd7ee20da3b1,💡 Explainer,,0,2852,9617
