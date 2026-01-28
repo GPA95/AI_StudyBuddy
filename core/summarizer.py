@@ -9,8 +9,13 @@ def summarize_text(text: str, previous_context: str = "", user_focus: str = "", 
     - `extra_instruction` (preferred) or `user_focus` will be used to adapt the output.
     """
     # Short-text guard
-    if not text or len(text.strip()) < 50:
-        return "⚠️ This text is too short to summarize. Please provide longer content."
+    clean_text = (text or "").strip()
+    if len(clean_text) < 100:
+        return (
+            "⚠️ The extracted text is very short. "
+            "This often happens with scanned/image-based PDFs or empty pages. "
+            "Please try another file or copy-paste the content directly."
+        )
 
     # Prefer extra_instruction, fall back to user_focus (keeps compatibility)
     instruction = extra_instruction.strip() if extra_instruction else user_focus.strip()
