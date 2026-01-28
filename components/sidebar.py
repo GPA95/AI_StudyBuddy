@@ -3,7 +3,7 @@ import time
 def sidebar_ui():
     """Sidebar with mode and Quizzer sub-mode selectors, and core controls."""
 
-    st.sidebar.title("⚙️ Settings")
+    st.sidebar.image("assets/sgpa_logo.png")
 
     # API/info
     st.sidebar.markdown("### API Model")
@@ -31,7 +31,6 @@ def sidebar_ui():
             index=0
         )
 
-    st.sidebar.markdown("---")
     if st.sidebar.button("🆕 New Chat"):
         st.session_state.messages = []
         # Success message that auto-disappears after 2 seconds
@@ -41,7 +40,6 @@ def sidebar_ui():
         time.sleep(2)
         success_placeholder.empty()
 
-    st.sidebar.markdown("---")
     st.sidebar.markdown(
         """
         [![Watch Demo](https://img.shields.io/badge/Watch-Demo%20Video-red?logo=youtube)](https://youtu.be/Yd0xMocB-V0)
@@ -49,7 +47,6 @@ def sidebar_ui():
         [![HelpDoc](https://img.shields.io/badge/User%20Help-How%20to%20Use-blue?logo=google-drive)](https://drive.google.com/file/d/14NEdW6L4WC_hiqlhNBEElzJnfN60EZDa/view?usp=sharing)
         """
     )
-    st.sidebar.markdown("---")
-    st.sidebar.caption("✨ StudyBuddy - AI Powered Study Assistant")
+    st.sidebar.caption("✨ SGPA - AI Powered Study Assistant")
 
     return mode, sub_mode
